@@ -4,3 +4,25 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+nav {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#medlemmer ul, #dokumenter ul {
+    width: 70%;
+    list-style: none;
+}
+
+#medlemmer li, #dokumenter li a{
+    color: white;
+}
+

@@ -22,7 +22,9 @@ nav a:hover {
     list-style: none;
 }
 
-
+#medlemmer li, #dokumenter li a{
+    color: black;
+}
 
 
 

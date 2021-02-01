@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-dark">
         <a class="navbar-brand" href="#">Gruppe 16</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggle-icon"></span>
@@ -28,44 +31,58 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div id="prosjekt" class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <div class="container-fluid">
+        <div id="prosjekt" class="container">
             <h2>Wikinomics AS</h2>
             <p>En markedsplass for karriereveiledning</p>
         </div>
 
-        <hr />
-
-        <div id="medlemmer" class="container d-flex align-items-center justify-content-around min-vh-100 text-center">
+        
+    </div>
+    <hr />
+    <div id="medlemmer" class="container-fluid">
+        <div class="studenter">
             <div class="card bg-light">
+                <img class="card-img-top" src="bilder/person-circle.svg">
                 <div class="card-title">Jakob Olsrud Johansen</div>
+                <hr />
                 <div class="card-body">s333753</div>
             </div>
             <div class="card bg-light">
+                <img class="card-img-top" src="bilder/person-circle.svg">
                 <div class="card-title">Martin Johansen</div>
+                <hr />
                 <div class="card-body">s333727</div>
             </div>
             <div class="card bg-light">
+                <img class="card-img-top" src="bilder/person-circle.svg">
                 <div class="card-title">Magnus Hjelmen Kristiansen</div>
+                <hr />
                 <div class="card-body">s333740</div>
             </div>
         </div>
+    </div>
 
-        <hr />
+    <hr />
 
-        <div id="dokumenter" class="container d-flex align-items-center justify-content-center min-vh-100">
-            <ul class="d-flex align-items-center justify-content-between">
-                <li>
-                    <a href="filer/statusrapport.pdf">Statusrapport</a>
-                </li>
-                <li>
-                    <a href="filer/prosjektskisse.pdf">Prosjektskisse</a>
-                </li>
-                <li>
-                    <a href="filer/forprosjektrapport.pdf">Forprosjekt</a>
-                </li>
-            </ul>
-        </div>
+    <div id="dokumenter" class="container-fluid">
+        <ul class="dokument-liste">
+            <li>
+                <a href="filer/statusrapport.pdf" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-file"></span> Statusrapport
+                </a>
+            </li>
+            <li>
+                <a href="filer/prosjektskisse.pdf" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-file"></span> Prosjektskisse
+                </a>
+            </li>
+            <li>
+                <a href="filer/forprosjektrapport.pdf" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-file"></span> Forprosjektrapport
+                </a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>

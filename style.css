@@ -17,6 +17,14 @@ nav a:hover {
     color: black;
 }
 
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
 #medlemmer ul, #dokumenter ul {
     width: 70%;
     list-style: none;
@@ -24,6 +32,39 @@ nav a:hover {
 
 #medlemmer li, #dokumenter li a{
     color: black;
+}
+
+.studenter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.card-body {
+    font-size: 1vw;
+}
+
+.dokument-liste {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .container-fluid {
+        height: 33vh;
+    }
 }
 
 
